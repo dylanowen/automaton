@@ -14,6 +14,8 @@
 		5446EAB723245089006A4FB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5446EAB623245089006A4FB7 /* Preview Assets.xcassets */; };
 		5446EABA23245089006A4FB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5446EAB823245089006A4FB7 /* LaunchScreen.storyboard */; };
 		5446EAC523245089006A4FB7 /* automatonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446EAC423245089006A4FB7 /* automatonTests.swift */; };
+		54BFD23E2324DB4E00EC398C /* RedirectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BFD23D2324DB4E00EC398C /* RedirectionRow.swift */; };
+		54BFD24023258E2F00EC398C /* IntentActionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BFD23F23258E2F00EC398C /* IntentActionStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +36,12 @@
 		5446EAB323245089006A4FB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5446EAB623245089006A4FB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5446EAB923245089006A4FB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5446EABB23245089006A4FB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5446EABB23245089006A4FB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		5446EAC023245089006A4FB7 /* automatonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = automatonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5446EAC423245089006A4FB7 /* automatonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = automatonTests.swift; sourceTree = "<group>"; };
 		5446EAC623245089006A4FB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54BFD23D2324DB4E00EC398C /* RedirectionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedirectionRow.swift; sourceTree = "<group>"; };
+		54BFD23F23258E2F00EC398C /* IntentActionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentActionStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +83,13 @@
 		5446EAAC23245087006A4FB7 /* automaton */ = {
 			isa = PBXGroup;
 			children = (
+				54BFD23A2324C99F00EC398C /* models */,
+				54BFD2362324C95800EC398C /* views */,
 				5446EAAD23245087006A4FB7 /* AppDelegate.swift */,
 				5446EAAF23245087006A4FB7 /* SceneDelegate.swift */,
-				5446EAB123245087006A4FB7 /* ContentView.swift */,
-				5446EAB323245089006A4FB7 /* Assets.xcassets */,
-				5446EAB823245089006A4FB7 /* LaunchScreen.storyboard */,
 				5446EABB23245089006A4FB7 /* Info.plist */,
+				5446EAB823245089006A4FB7 /* LaunchScreen.storyboard */,
+				5446EAB323245089006A4FB7 /* Assets.xcassets */,
 				5446EAB523245089006A4FB7 /* Preview Content */,
 			);
 			path = automaton;
@@ -105,6 +110,23 @@
 				5446EAC623245089006A4FB7 /* Info.plist */,
 			);
 			path = automatonTests;
+			sourceTree = "<group>";
+		};
+		54BFD2362324C95800EC398C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				54BFD23D2324DB4E00EC398C /* RedirectionRow.swift */,
+				5446EAB123245087006A4FB7 /* ContentView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		54BFD23A2324C99F00EC398C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				54BFD23F23258E2F00EC398C /* IntentActionStore.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +232,9 @@
 			files = (
 				5446EAAE23245087006A4FB7 /* AppDelegate.swift in Sources */,
 				5446EAB023245087006A4FB7 /* SceneDelegate.swift in Sources */,
+				54BFD24023258E2F00EC398C /* IntentActionStore.swift in Sources */,
 				5446EAB223245087006A4FB7 /* ContentView.swift in Sources */,
+				54BFD23E2324DB4E00EC398C /* RedirectionRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
